@@ -22,6 +22,14 @@
     font-size: 0.813rem;
 }
 
+.padding-top{
+    padding: 1.5rem 0;
+}
+
+.white-font{
+    color: white;
+}
+
 .btn{
     border: none;
     border-radius: 2rem;
@@ -160,6 +168,50 @@ header nav.desktop-nav{
     border-radius: 50%;
 }
 
+/* Section-3: testimonials*/
+
+.cards-testimonial{
+    margin: auto;
+    margin: 1rem;
+}
+
+.cards-testimonial .titles{
+    text-align: center;
+}
+
+.cards-testimonial .card{
+    margin: auto;
+    text-align: center;
+    background-color: #9792e4;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cards-testimonial .card .circular-img{
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.cards-testimonial .card .circular-img img{
+    height: 100%;
+    width: auto;
+    margin-left: -30px;
+}
+
+.cards-testimonial p{
+    line-height: 1.5rem;
+}
+
+.cards-testimonial h1{
+    color: #9792e4;
+    font-size: 1.7rem;
+}
+
 
 /* Media Query */
 
@@ -197,6 +249,23 @@ header nav.desktop-nav{
         height: 400px;
         margin: auto;
     }
+
+    /* Section-3: testimonials*/
+
+    .cards-testimonial .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards-testimonial .card .circle{
+        flex-basis: 20%;
+    }
+
+    .cards-testimonial .card .text{
+        flex-basis: 75%;
+    }
+
 }
 
 
@@ -272,5 +341,12 @@ header nav.desktop-nav{
 
     .cards-planning .box-2{
         height: 80%;
+    }
+
+    /* Section-3: testimonials*/
+
+    .cards-testimonial{
+        width: 70%;
+        margin: auto;
     }
 }
