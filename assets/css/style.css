@@ -1,0 +1,276 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-width: 325px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Settings */
+
+.flex{
+    display: flex;
+}
+
+.small-font{
+    font-size: 0.813rem;
+}
+
+.btn{
+    border: none;
+    border-radius: 2rem;
+}
+
+img{
+    display: block;
+}
+
+/* Header */
+
+header{
+    background-color: #0084fd;
+    padding: 1rem 2rem;
+}
+
+.header-container{
+    justify-content: space-between;
+    color: white;
+}
+
+header nav button{
+    background-color: white;
+    padding: 0.5rem;
+}
+
+/* Mobile-nav */
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding-right: 1.5rem;
+}
+
+header nav a i{
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+/* Desktop-nav */
+
+header nav.desktop-nav{
+    display: none;
+}
+
+
+/* Main */
+
+/* Section-1: demo application*/
+
+.cards-demo{
+    padding: 2rem 1.5rem;
+}
+
+.cards-demo .card{
+    background-color: #b5ddff;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem 2.5rem 0 2.5rem;
+}
+
+.cards-demo .card h2{
+    color: #0084fd;
+}
+
+.cards-demo .card p{
+    line-height: 1.5rem;
+}
+
+.cards-demo .card button{
+    background-color: #0084fd;
+    padding: 0.7rem 2.2rem;
+    color: white;
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
+}
+
+.cards-demo .card img{
+    margin: auto;
+}
+
+.cards-demo .card h2, p, button{
+    margin-bottom: 1.5rem;
+}
+
+.cards-demo .small-card{
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.cards-demo .small-card i{
+    font-size: 5rem;
+    color: #0084fd;
+    margin-bottom: 1.5rem;
+}
+
+/* Section-2: strategic-planning*/
+
+.strategic-planning{
+    background-color: #9792e4;
+    padding: 3rem 1.5rem;
+}
+
+.cards-planning p{
+    line-height: 1.5rem;
+}
+
+.cards-planning h2{
+    padding: 1.5rem 0;
+}
+
+.cards-planning .box-1{
+    color: white;
+}
+
+.cards-planning .box-2{
+    background-color: white;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cards-planning .box-2 img{
+    margin: auto;
+}
+
+.cards-planning .box-1 h2{
+    font-size: 1.7rem;
+}
+
+.cards-planning .box-2 i{
+    background-color: #9792e4;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+
+/* Media Query */
+
+@media screen and (min-width: 426px) {
+
+    /* Section-1: demo application*/
+
+    .cards-demo .cards-row{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .cards-demo .cards-row .big-card{
+        flex-basis: 68%;
+    }
+
+    .cards-demo .cards-row .small-card-top{
+        flex-basis: 32%;
+    }
+    
+    .cards-demo .card img{
+        margin: 0;
+    }
+
+    /* Section-2: strategic-planning*/
+    
+    .cards-planning .box-1 img{
+        height: 500px;
+        margin: auto;
+    }
+
+    .cards-planning .box-2 img{
+        height: 400px;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .container{
+        width: 100%;
+    }
+
+    /* Header */
+
+    .header-container{
+        width: 70%;
+        margin: auto;
+    }
+    
+    header nav.mobile-nav{
+        display: none;
+    }
+
+    header nav.desktop-nav{
+        display: block;
+    }
+
+    /* Section-1: demo application*/
+
+    .cards-demo{
+        width: 70%;
+        margin: auto;
+    }
+    .cards-demo .big-card{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards-demo .box-left{
+        width: 60%;
+    }
+
+    .cards-demo .box-right{
+        width: 40%;
+        position: relative;
+    }
+
+    .cards-demo .box-right img{
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* Section-2: strategic-planning*/
+
+    .cards-planning{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: flex-end;
+    }
+
+    .cards-planning .box-1 img{
+        height: 300px;
+        margin: auto;
+    }
+
+    .cards-planning .box-2 img{
+        height: 200px;
+        margin: auto;
+    }
+
+    .cards-planning .box-1, .box-2{
+        flex-basis: calc((100% / 2) - 3%);
+    }
+
+    .cards-planning .box-2{
+        height: 80%;
+    }
+}
