@@ -12,7 +12,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Settings */
+/* Utilities */
 
 .flex{
     display: flex;
@@ -24,6 +24,10 @@
 
 .padding-top{
     padding: 1.5rem 0;
+}
+
+.margin-top{
+    margin-top: 2rem;
 }
 
 .white-font{
@@ -48,6 +52,7 @@ header{
 
 .header-container{
     justify-content: space-between;
+    align-items: center;
     color: white;
 }
 
@@ -66,8 +71,6 @@ header nav a{
 
 header nav a i{
     font-size: 1.5rem;
-    position: relative;
-    top: 0.5rem;
 }
 
 /* Desktop-nav */
@@ -107,13 +110,15 @@ header nav.desktop-nav{
     font-size: 1rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .cards-demo .card img{
     margin: auto;
+    width: 70%;
 }
 
-.cards-demo .card h2, p, button{
+.cards-demo .card h2, p{
     margin-bottom: 1.5rem;
 }
 
@@ -123,7 +128,7 @@ header nav.desktop-nav{
 }
 
 .cards-demo .small-card i{
-    font-size: 5rem;
+    font-size: 4rem;
     color: #0084fd;
     margin-bottom: 1.5rem;
 }
@@ -172,7 +177,8 @@ header nav.desktop-nav{
 
 .cards-testimonial{
     margin: auto;
-    margin: 1rem;
+    margin: 1.5rem;
+    padding: 2rem 0;
 }
 
 .cards-testimonial .titles{
@@ -188,13 +194,16 @@ header nav.desktop-nav{
     margin-bottom: 2rem;
 }
 
-.cards-testimonial .card .circular-img{
+.circular-img{
     height: 130px;
     width: 130px;
     overflow: hidden;
     border-radius: 50%;
-    margin: auto;
     margin-bottom: 1rem;
+}
+
+.cards-testimonial .card .circular-img{
+    margin: auto;
 }
 
 .cards-testimonial .card .circular-img img{
@@ -210,6 +219,168 @@ header nav.desktop-nav{
 .cards-testimonial h1{
     color: #9792e4;
     font-size: 1.7rem;
+}
+
+/* Section-4: benefits*/
+
+.benefits{
+    background-color: #9792e4;
+    padding: 2.5rem 0;
+}
+
+.benefits h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.cards-benefits .card{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    color: #9792e4;
+}
+
+.cards-benefits .card .number{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.cards-benefits .card h3{
+    margin-bottom: 1rem;
+}
+
+.cards-benefits .card p{
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    color: rgb(25, 25, 25);
+}
+
+.cards-benefits .card button{
+    background-color: #9792e4;
+    padding: 0.5rem 2.5rem;
+    color: white;
+}
+
+/* Section-5: about-us*/
+
+.about-us{
+    padding: 2rem 0;
+}
+
+.box-about-us{
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.box-about-us h2{
+    padding: 1.5rem 0;
+    color: #9792e4;
+    font-size: 2rem;
+}
+
+.box-about-us p{
+    line-height: 1.5rem;
+}
+
+.box-about-us .circular-img img{
+    height: 100%;
+    width: auto;
+}
+
+.box-about-us .box-right .container-img{
+    width: 9rem;
+    position: relative;
+}
+
+.box-about-us .box-right .fa-quote-left{
+    color: #9792e4;
+    font-size: 3rem;
+    z-index: 10;
+    position: absolute;
+    left: 6rem;
+}
+
+.box-about-us .box-right h2{
+    color: #9792e4;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+}
+
+.box-about-us .box-right button{
+    background-color: #9792e4;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Section-6: get-started*/
+
+.get-started{
+    background-color: #9792e4;
+    padding: 2rem 0;
+}
+
+.box-get-started{
+    padding: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.box-get-started h3{
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.box-get-started h2{
+    margin: 1rem 0;
+    color: #fdc15f;
+    font-size: 2.5rem;
+}
+
+.box-get-started p{
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.box-get-started p a{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.box-get-started button{
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    color: #9792e4;
+    background-color: white;
+}
+
+.box-get-started .fa-circle{
+    font-size: 0.3rem;
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+/* Footer */
+
+footer{
+    background-color: #333333;
+    color: white;
+}
+
+.box-footer{
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.box-footer :first-child{
+    margin-bottom: 3rem;
+}
+
+.box-footer a{
+    color: #9792e4;
 }
 
 
@@ -266,7 +437,61 @@ header nav.desktop-nav{
         flex-basis: 75%;
     }
 
+    /* Section-4: benefits*/
+
+    .box-benefits{
+        width: 100%;
+    }
+
+    .cards-benefits{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .cards-benefits > .card{
+        margin: 0;
+        margin-bottom: 1rem;
+        flex-basis: calc(100% / 2 - 1%);  
+    }
+
+    /* Section-5: about-us*/
+
+    .box-about-us{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;  
+    }
+    
+    .box-about-us .box-left{
+        flex-basis: 70%;
+    }
+
+    .box-about-us .box-right{
+        flex-basis: 30%;
+    }
+
+    .box-about-us .box-right .circular-img{
+        margin: auto;
+    }
+
+    /* Section-6: get-started*/
+
+    .box-get-started{
+        width: 70%;
+        margin: auto;
+    }
+
+    /*Footer*/
+
+    .box-footer{
+        width: 70%;
+        margin: auto;
+    }
+
 }
+
 
 
 @media screen and (min-width: 769px) {
@@ -287,13 +512,14 @@ header nav.desktop-nav{
     }
 
     header nav.desktop-nav{
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     /* Section-1: demo application*/
 
     .cards-demo{
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
     .cards-demo .big-card{
@@ -302,45 +528,49 @@ header nav.desktop-nav{
     }
 
     .cards-demo .box-left{
-        width: 60%;
+        width: 50%;
     }
 
     .cards-demo .box-right{
-        width: 40%;
+        width: 50%;
         position: relative;
     }
 
     .cards-demo .box-right img{
+        width: 220px;
+        height: 280px;
         position: absolute;
         bottom: 0;
+        right: 0;
     }
 
     /* Section-2: strategic-planning*/
 
     .cards-planning{
-        width: 60%;
+        width: 70%;
         display: flex;
         justify-content: space-between;
         margin: auto;
-        align-items: flex-end;
     }
 
     .cards-planning .box-1 img{
-        height: 300px;
+        max-height: 250px;
         margin: auto;
     }
 
     .cards-planning .box-2 img{
-        height: 200px;
+        max-height: 150px;
         margin: auto;
     }
 
     .cards-planning .box-1, .box-2{
-        flex-basis: calc((100% / 2) - 3%);
+        flex-basis: calc(100% / 2);
     }
 
     .cards-planning .box-2{
         height: 80%;
+        align-self: flex-end;
+        margin-left: 1rem;
     }
 
     /* Section-3: testimonials*/
@@ -349,4 +579,23 @@ header nav.desktop-nav{
         width: 70%;
         margin: auto;
     }
+
+    /* Section-4: benefits*/
+
+    .box-benefits{
+        width: 70%;
+        margin: auto;
+    }
+
+    .cards-benefits > .card{
+        flex-basis: calc(100% / 3 - 1%);  
+    }
+
+    /* Section-5: about-us*/
+
+    .box-about-us{
+        width: 70%;
+        margin: auto;
+    }
+
 }
